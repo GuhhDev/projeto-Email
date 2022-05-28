@@ -18,7 +18,9 @@ public class Investimento {
     private Long id;
     private Integer investimento;
 
-    public Investimento() {}
+    public Investimento() {
+    }
 
-    public Investimento(Investimento investimento) {}
+    public Investimento(Investimento investimento) {
+    }
 }

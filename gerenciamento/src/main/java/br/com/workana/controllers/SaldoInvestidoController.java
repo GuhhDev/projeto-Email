@@ -17,8 +17,8 @@ import java.util.List;
 @RequestMapping("/investimento")
 public class SaldoInvestidoController {
 
-        @Autowired
-        InvestimentoService investimentoService;
+    @Autowired
+    InvestimentoService investimentoService;
 
 //        @GetMapping
 //        public Page<InvestimentoDTO> findAll(Pageable pageable) {
