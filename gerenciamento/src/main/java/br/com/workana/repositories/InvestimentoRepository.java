@@ -7,4 +7,5 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface InvestimentoRepository extends JpaRepository<Investimento, Long> {}
+public interface InvestimentoRepository extends JpaRepository<Investimento, Long> {
+}

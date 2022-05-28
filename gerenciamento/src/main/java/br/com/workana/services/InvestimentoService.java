@@ -17,11 +17,11 @@ public class InvestimentoService {
     @Autowired
     InvestimentoRepository investimentoRepository;
 
-    public List<Investimento> findInvestimento(){
+    public List<Investimento> findInvestimento() {
         return investimentoRepository.findAll();
     }
 
-    public void saveInvestimento(Investimento investimento){
+    public void saveInvestimento(Investimento investimento) {
         investimentoRepository.save(investimento);
 
     }
