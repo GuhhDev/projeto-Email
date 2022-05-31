@@ -15,6 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class EmailController {
 
     @Autowired
@@ -26,5 +27,10 @@ public class EmailController {
         BeanUtils.copyProperties(emailDto, email);
         emailService.sendEmail(email);
         return new ResponseEntity<>(email, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/getting-email")
+    public List<Email> gettingEmail() {
+        return emailService.gettingEmail();
     }
 }

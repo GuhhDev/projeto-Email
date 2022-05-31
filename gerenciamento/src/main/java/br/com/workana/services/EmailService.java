@@ -40,4 +40,8 @@ public class EmailService {
             return emailRepository.save(email);
         }
     }
+
+    public List<Email> gettingEmail() {
+        return emailRepository.findAll();
+    }
 }
